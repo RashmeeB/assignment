@@ -1,0 +1,67 @@
+1)if....else if.....
+public class GradeCalculator {  
+public static void main(String[] args) {  
+    Scanner sc=new Scanner(System.in);
+System.out.print("Enter the marks:");
+int marks=sc.nextint();  
+      
+    if(marks<50){  
+        System.out.println("F grade");  
+    }  
+    else if(marks>=50 && marks<60){  
+        System.out.println("E grade");  
+    }  
+    else if(marks>=60 && marks<70){  
+        System.out.println("D grade");  
+    }  
+    else if(marks>=70 && marks<80){  
+        System.out.println("C grade");  
+    }  
+    else if(marks>=80 && marks<90){  
+        System.out.println("B grade");  
+    }else if(marks>=90 && marks<100){  
+        System.out.println("A grade");  
+    }else{  
+        System.out.println("Invalid!");  
+    }  
+}  
+}
+
+2)switch....
+public class GradeCalculator {
+
+   public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.print("Enter the marks:");
+      int marks=sc.nextint(); 
+      switch(score/10) {
+        // for >= 90
+        case 10:
+        case 9:
+           grade = "A";
+           break;
+        // for >= 80 and <90
+        case 8:
+           grade = "B";
+           break;
+        // for >= 70 and <80
+        case 7:
+           grade = "C";
+           break;
+        // for >= 60 and <70
+        case 6:
+           grade = "D";
+           break;
+        // for >= 50 and <60
+        case 5:
+           grade = "E";
+           break;
+        // for < 50
+        default:
+           grade = "F";
+           break;
+      }
+      System.out.println("Grade = " + grade);
+   }
+
+}  
