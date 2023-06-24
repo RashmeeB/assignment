@@ -62,5 +62,4 @@ public class GradeCalculator {
            break;
       }
       System.out.println("Grade = " + grade);
-   }
-}
+   }}
